@@ -5,7 +5,7 @@ using System.IO;
 using UnityEngine;
 
 // MUSS mit Tisch/body_01 verknüpft werden!!
-public class Tisch_Kalibreriung : MonoBehaviour
+public class Tisch_Kalibrierung : MonoBehaviour
 {
     // Definitions
     float x;

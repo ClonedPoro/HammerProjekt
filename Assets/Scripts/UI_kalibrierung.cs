@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public class UI_kalibration : MonoBehaviour
+public class UI_kalibrierung : MonoBehaviour
 {
     public GameObject uiPanel;
 
