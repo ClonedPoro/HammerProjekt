@@ -66,7 +66,7 @@ public class FPSDisplay : MonoBehaviour
     {
         //Debug.Log(data_list);
         
-        string path = @"C:\Users\VR\Documents\GitHub\HammerProjekt\Output\FPS_test.csv";
+        string path = @"C:\Users\VR\Documents\GitHub\HammerProjekt\Output_test\FPS_test.csv";
         //string text = @"FPS Rate";
 
         //using (StreamWriter writer = new StreamWriter(path))

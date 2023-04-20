@@ -10,7 +10,7 @@ public class Tracker2_coordinates : MonoBehaviour
     int interval = 10;
     List<double> timestamps = new List<double>();
     DateTime start = DateTime.UtcNow;
-    string path = @"C:\Users\VR\Documents\GitHub\HammerProjekt\Output\Tracker2_coordinates.csv";
+    string path = @"C:\Users\VR\Documents\GitHub\HammerProjekt\Output_test\Tracker2_coordinates.csv";
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +36,7 @@ public class Tracker2_coordinates : MonoBehaviour
             StreamWriter sw = File.AppendText(path);
             sw.WriteLine(timespent.TotalSeconds + ";" + x + ";" + y + ";" + z + ";" + transform.forward.x + ";" + transform.forward.y + ";" + transform.forward.z);
             sw.Close();
-            Debug.Log("write to file");
+            //Debug.Log("write to file");
             time = 0;
         }
         else

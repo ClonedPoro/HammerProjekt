@@ -11,7 +11,7 @@ public class Controllertable_coordinates : MonoBehaviour
     int interval = 10;
     List<double> timestamps = new List<double>();
     DateTime start = DateTime.UtcNow;
-    string path = @"C:\Users\VR\Documents\GitHub\HammerProjekt\Output\Controllertable_coordinates.csv";
+    string path = @"C:\Users\VR\Documents\GitHub\HammerProjekt\Output_test\Controllertable_coordinates.csv";
     // Start is called before the first frame update
     void Start()
     {
