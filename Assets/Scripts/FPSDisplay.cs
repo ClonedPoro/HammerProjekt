@@ -16,6 +16,7 @@ public class FPSDisplay : MonoBehaviour
 
     float[] deltaTimes;
     float[] fps;
+    string VP_path;
 
     //DataFrameColumn[] columns =
     //{
@@ -66,11 +67,16 @@ public class FPSDisplay : MonoBehaviour
     {
         //Debug.Log(data_list);
         
-        string path = @"C:\Users\VR\Documents\GitHub\HammerProjekt\Output_test\FPS_test.csv";
+        //string path = @"C:\Users\VR\Documents\GitHub\HammerProjekt\Output_test\FPS_test.csv";
+        //safe file to the correct path
+        string dir = @"C:\Users\VR\Documents\GitHub\HammerProjekt\Output\";
+        string[] paths = { dir, "current_VP_path.txt" };
+        VP_path = File.ReadAllText(Path.Combine(paths));
+        VP_path = Path.Combine(VP_path, "FPS_Display.csv");
         //string text = @"FPS Rate";
 
         //using (StreamWriter writer = new StreamWriter(path))
-        using (StreamWriter sw = File.CreateText(path))
+        using (StreamWriter sw = File.CreateText(VP_path))
         /*{
             data_list.ForEach(data_list => writer.WriteLine(data_list));
             dt_list.ForEach(data_list => writer.WriteLine(dt_list));

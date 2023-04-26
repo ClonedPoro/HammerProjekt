@@ -8,12 +8,12 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Shader
-  m_Shader: {fileID: 4800000, guid: ed04895971c00fc498c346df2ac0e9b4, type: 3}
-  m_ValidKeywords:
-  - _SOURCE_SPECULARALPHA
+  m_Shader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
+  m_ValidKeywords: []
   m_InvalidKeywords:
   - _DETAILSOURCE_SPECULARALPHA
   - _ENABLETRIPLANARPROJECTION_ON
+  - _SOURCE_SPECULARALPHA
   - _TRIPLANARSPACEPROJECTION_OBJECTSPACE
   - _USEAOFROMMAINPROPERTIES_ON
   - _USEEMISSIONFROMMAINPROPERTIES_ON
@@ -85,8 +85,10 @@ Material:
     - _BlendmodeOverlay: 0
     - _Brightness: 1
     - _BumpScale: 1
+    - _ColorMask: 15
     - _ContrastDetailMap: 0
     - _Cull: 0
+    - _CullMode: 0
     - _Cutoff: 0.5
     - _DetailBrightness: 1
     - _DetailGlossiness: 0.5
@@ -117,17 +119,24 @@ Material:
     - _SpecularIntensity: 0.2
     - _SpreadDetailMap: 0
     - _SrcBlend: 1
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
     - _TriplanarFalloff: 20
     - _TriplanarSpaceProjection: 0
     - _UVSec: 0
     - _UseAoFromMainProperties: 1
     - _UseBaseColorAlpha: 0
     - _UseEmissionFromMainProperties: 1
+    - _UseUIAlphaClip: 0
     - _VisualizeMask: 0
     - _ZTest: 4
     - _ZWrite: 1
     - __dirty: 1
     m_Colors:
+    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DetailColor: {r: 1, g: 1, b: 1, a: 0}
     - _DetailSpecularColor: {r: 1, g: 1, b: 1, a: 0}
