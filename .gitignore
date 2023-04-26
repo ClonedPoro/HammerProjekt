@@ -74,3 +74,4 @@ crashlytics-build.properties
 # Tests
 Assets.zip
 Output_test/
+Assets/
