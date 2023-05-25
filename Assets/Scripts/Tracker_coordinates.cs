@@ -53,6 +53,8 @@ public class Tracker_coordinates : MonoBehaviour
             float z = transform.position.z;
             float fx = transform.forward.x;
             float fz = transform.forward.z;
+            print("Position x:");
+            print(x);
             DateTime end = DateTime.UtcNow;
             TimeSpan timespent = end - start;
             StreamWriter sw = File.AppendText(VP_path);
